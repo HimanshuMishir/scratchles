@@ -1,0 +1,120 @@
+.logo-heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px;
+}
+
+.navbar-toggler {
+    color: #000;
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: black;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler {
+    color: #000;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: white;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding-right: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-item {
+        padding: 0;
+    }
+}
+
+.material-icons {
+    font-size: 48px;
+}
+
+.bg-light {
+    background-color: transparent!important;
+}
+
+.backgroundImageContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.backgroundImage {
+    width: 100%;
+}
+
+.bigHeading h1 {
+    padding: auto;
+    margin: auto;
+    margin-top: 100px;
+    font-family: 'Permanent Marker', 'cursive';
+    font-size: 100px;
+}
+
+.bigHeading h1:hover {
+    color: white;
+}
+
+.bigHeading p {
+    font-family: 'Pacifico';
+    font-size: 25px;
+    color: red;
+}
+
+.interests-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type=checkbox]+label {
+    display: flex;
+    font-family: 'Permanent Marker', Courier, monospace;
+    font-size: 20px;
+    color: #ff1100;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    min-width: 120px;
+    border-radius: 30px;
+    justify-content: center;
+    border: 4px solid rgb(255, 8, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type=checkbox]:checked+label {
+    color: rgb(255, 255, 255);
+    background-color: red;
+}
+
+input[type=checkbox]:hover+label {
+    color: white;
+}
+input[type=submit] {
+    
+}

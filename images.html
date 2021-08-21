@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratchles - A New era of Exploration.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Permanent+Marker&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- My CSS -->
+
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 logo-heading">Scratchles</span>
+            <checkbox class="navbar-toggler" type="checkbox" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="material-icons">
+                    menu
+                </span>
+            </checkbox>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Me!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card-container">
+        <div class="card">
+
+        </div>
+
+    </div>
+    <div class="card-container">
+        <div class="card">
+
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('mousemove', function(e){
+            const wrap = document.querySelector('.card');
+            const erase = document.createElement('span');
+            erase.className = 'span-erase';
+            erase.style.left = e.offsetX + 'px';
+            erase.style.top = e.offsetY + 'px';
+            wrap.appendChild(erase);
+        })
+
+    </script>
+
+
+
+   <!--  <script src="./javascript/index.js"></script> -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
